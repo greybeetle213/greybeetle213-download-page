@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>greybeetle213s website</title>
+        <style>
+            .whitediv {
+                background-color: snow;
+                text-align: left;
+                border: 5px outset black;
+                width: 60%;
+                padding: 15px;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(backdrop.png);">
+        <center>
+            <div class="whitediv">
+                <h1>Latest video:</h1>
+                <br>
+                <div style="border: 4px outset black; background-color: black; overflow: hidden; display: inline-block;">
+                    <div style="float: left;">
+                        <a href="https://www.youtube.com/watch?v=JtKIisAQruM&t=0s", style="color: white;">
+                        <img style="width: 300px; height: 180px;" src="latestvideothumbnail.png" alt="Unalble to load thumbnail">
+                        </a>
+                        <br>
+                    </div>
+                    <div style="float: left; padding: 15px;">
+                        <p style="color: white;">How to do custom crafting with NBT in minecraft.<br>
+                        This website tool generates the code that you will need:<br>
+                        <a href="http://greybeetle213.pythonanywhere.com", style="color: turquoise;">http://greybeetle213.pythonanywhere.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <p> </p>
+            <div class="whitediv">
+                <h1>Other Content:</h1>
+                <button onclick="videodropdown()", id="videodropdown">Vidoes ^</button>
+                <br>
+                <p id="videos"></p>
+                <button onclick="downloaddropdown()", id="downloaddropdown">Downloads ^</button>
+                <br>
+                <p id="downloads"></p>
+            </div>
+        </center>
+    <script>
+        var videodropeddown
+        videodropeddown = false
+        var downloaddropeddown
+        downloaddropeddown = false
+        function videodropdown(){
+            if(videodropeddown == false){
+                document.getElementById("videos").innerHTML = '<a href="https://www.youtube.com/watch?v=xjYztyqMRkM&t=217s">Custom enchantments</a><br><a href="https://www.youtube.com/watch?v=huAxdHhw8as&t=15s">Chess in Minecraft</a><br><a href="https://www.youtube.com/watch?v=JtKIisAQruM&t=0s">craft with nbt</a>'
+                document.getElementById("videodropdown").innerHTML = "Videos v"
+                videodropeddown = true
+            }else{
+                document.getElementById("videos").innerHTML = ""
+                document.getElementById("videodropdown").innerHTML = "Videos ^"
+                videodropeddown = false
+            }
+        }
+        function downloaddropdown(){
+            if(downloaddropeddown == false){
+                document.getElementById("downloads").innerHTML = '<a href="http://greybeetle213.pythonanywhere.com">Custom dropper crafting genorator</a><br><a href="https://github.com/greybeetle213/greybeetle213.github.io/raw/master/chess.zip">Chess World</a>'
+                document.getElementById("downloaddropdown").innerHTML = "Downloads v"
+                downloaddropeddown = true
+            }else{
+                document.getElementById("downloads").innerHTML = ""
+                document.getElementById("downloaddropdown").innerHTML = "Downloads ^"
+                downloaddropeddown = false
+            }
+        
+        }
+
+    </script>
+    </body>
+</html>
